@@ -81,7 +81,8 @@ if (options.encryption.tls != undefined) {
     var CERT = fs.readFileSync(options.encryption.cert);
     var TRUSTED_CA_LIST = [fs.readFileSync(options.encryption.ca)];
 
-    var HOST = 'localhost';
+  // var HOST = 'localhost';
+    var HOST = '192.168.8.106';
     if (options.connection.hostname != undefined) {
       var HOST = options.connection.hostname;
     }
@@ -115,7 +116,9 @@ if (options.encryption.tls != undefined) {
 }
 
 // Create variables for the sensor name and topic
-var topic = "sensors/" + options.sensor.name + "/data";
+//var topic = "sensors/" + options.sensor.name + "/data";
+//var topic = "sensors-temparature-data";
+var topic = "temperature";
 
 // On the client connect event run a function
 // to log the event to the console

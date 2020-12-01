@@ -127,14 +127,14 @@ const optionDefinitions = [{
         name: 'min',
         description: 'the minimum value emitted',
         type: Number,
-        defaultValue: 17,
+        defaultValue: -10,
         group: 'analog'
     },
     {
         name: 'max',
         description: 'the maximun value emitted',
         type: Number,
-        defaultValue: 30,
+        defaultValue: 50,
         group: 'analog'
     }
 ]
@@ -173,8 +173,8 @@ const sections = [{
 
 
 var ex = {
-  optionDefinitions: optionDefinitions,
-  sections: sections
+    optionDefinitions: optionDefinitions,
+    sections: sections
 }
 
 module.exports = ex;

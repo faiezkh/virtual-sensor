@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "mqtt": "latest",
-    "chalk" : "latest",
+    "chalk": "latest",
     "command-line-args": "latest",
     "command-line-usage": "latest"
   }
